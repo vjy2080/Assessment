@@ -28,7 +28,7 @@ section{
     margin: auto;
     padding: 10px;
     justify-content: center;
-    font-size: xx-large;
+    font-size: large;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -39,7 +39,7 @@ section{
     border-radius: 10px;
     background: rgb(194, 191, 238);
     background: linear-gradient(180deg, rgba(194, 191, 238, 1) 30%, rgba(0, 212, 255, 1) 100%);
-    font-size: xx-large;
+    font-size: large;
     font-weight: 800;
     width: 50%;
     margin: auto;
