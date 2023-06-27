@@ -1,4 +1,13 @@
-<script>
+let date = new Date();
+let fullDate = date.toLocaleString('en-US', {
+    weekday: 'long', // long, short, narrow
+    day: 'numeric', // numeric, 2-digit
+    year: 'numeric', // numeric, 2-digit
+    month: 'long', // numeric, 2-digit, long, short, narrow
+});
+
+document.getElementById("date").innerHTML = fullDate
+
 setInterval(showTime, 1000);
 function showTime() {
     let time = new Date();
@@ -28,4 +37,3 @@ function showTime() {
 }
 
 showTime();
-</script>
