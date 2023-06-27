@@ -4,34 +4,48 @@
     box-sizing: border-box;
 }
 
-section {
+section{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: ;
-    justify-content: center;
-    align-items: center;
-}
-#clock {
-    border: 5px solid rgb(148, 169, 232);
-    border-radius: 10px;
-    background: rgb(194, 191, 238);
-    background: linear-gradient(180deg, rgba(194, 191, 238, 1) 30%, rgba(0, 212, 255, 1) 100%);
-    width: 50%;
-    margin: auto;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
 }
 
-#date {
-    margin-bottom: 30px;
-    font-size: xx-large;
+@font-face {
+    font-family: Lora-VariableFont_wght;
+    src: url(Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Orbitron-VariableFont_wght;
+    src: url(Orbitron-VariableFont_wght.ttf);
+}
+
+#clock {
+    font-family: Orbitron-VariableFont_wght;
     font-weight: 800;
     background: rgb(0, 255, 255);
     background: linear-gradient(135deg, rgba(0, 255, 255, 1) 0%, rgba(255, 255, 0, 1) 52%, rgba(255, 0, 255, 1) 100%);
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    font-size: xx-large;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+}
+
+#date {
+    border: 5px solid rgb(109, 157, 160);
+    border-radius: 10px;
+    background: rgb(194, 191, 238);
+    background: linear-gradient(180deg, rgba(194, 191, 238, 1) 30%, rgba(0, 212, 255, 1) 100%);
+    font-size: xx-large;
+    font-weight: 800;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+
 }
 
 
