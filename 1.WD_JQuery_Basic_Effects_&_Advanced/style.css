@@ -21,22 +21,23 @@ section {
 }
 
 #date {
+    font-family:Lora-VariableFont_wght;
     border: 5px solid rgb(109, 157, 160);
     border-radius: 10px;
     background: rgb(194, 191, 238);
     background: linear-gradient(180deg, rgba(194, 191, 238, 1) 30%, rgba(0, 212, 255, 1) 100%);
     font-size: large;
     font-weight: 800;
-    width: 50%;
     margin: auto;
-    padding: 10px;
+    padding: 10px ;
     text-align: center;
+    width: 25%;
 }
 
-.bg{
+.bg {
     margin: auto;
-    width: 100%;
     text-align: center;
+    width: 25%;
 }
 
 #clock {
@@ -44,13 +45,12 @@ section {
     font-weight: 800;
     background: linear-gradient(135deg, rgba(0, 255, 255, 1) 0%, rgba(255, 255, 0, 1) 52%, rgba(255, 0, 255, 1) 100%);
     margin: auto;
-    padding: 10px;
-    font-size: large;
-    line-height: 30px;
+    padding: 5px;
+    font-size: XX-large;
+    line-height: 50px;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 50%;
 }
 
 .clip-text {
@@ -70,7 +70,7 @@ section {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: inherit;
+    background-image:inherit;
 }
 
 .clip-text:after {
