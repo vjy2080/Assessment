@@ -12,12 +12,12 @@ section {
 
 @font-face {
     font-family: Lora-VariableFont_wght;
-    src: url(Lora-VariableFont_wght.ttf);
+    src: url(font/Lora-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: Orbitron-VariableFont_wght;
-    src: url(Orbitron-VariableFont_wght.ttf);
+    src: url(font/Orbitron-VariableFont_wght.ttf);
 }
 
 #date {
