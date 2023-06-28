@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.clip-text {
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: .25em;
+    padding: .5em .75em;
+    text-align: center;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background-color: #000;
+}
+.clip-text_one {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKcAAAB9CAMAAADwbYOXAAAAUVBMVEX/AADrAADlAAD3AADzAADVAADvAAD7AADRAADtKBL6EQiNAACdAADFAAC1AADoAACrAACjAACCAADlMhdex1tU0GC0XivLAADzFgrFYi3DZy/Sa4cFAAAAiElEQVR4nO3QOQ7CQAxA0ZnMRoAQ9iX3PyhBQvQoKd9r3H3ZDuGr5lRDyzksVFtNOaelmZ/W9/12nmm3L11Jw6GUTRhLWZiNx80wDKdzXWPHj8v1drs/4rxoSKmlOMYuh1jj0u58dJdbWe2hz9c09W2tGgAAAAAAAAAAAAAAAAAAAAAAAADwhzcQAQKPJ1ZrMwAAAABJRU5ErkJggg==);
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="clip-text clip-text_one">JINTOS</div>
+    </div>
+</body>
+</html>
