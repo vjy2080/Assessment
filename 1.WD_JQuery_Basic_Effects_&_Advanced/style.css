@@ -1,27 +1,33 @@
+/* Reset styles for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
+/* Define custom font Lora-VariableFont_wght */
 @font-face {
     font-family: Lora-VariableFont_wght;
     src: url(font/Lora-VariableFont_wght.ttf);
 }
 
+/* Define custom font Orbitron-VariableFont_wght */
 @font-face {
     font-family: Orbitron-VariableFont_wght;
     src: url(font/Orbitron-VariableFont_wght.ttf);
 }
 
+/* Styling for section element */
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for element with ID 'date' */
 #date {
-    font-family:Lora-VariableFont_wght;
+    font-family: Lora-VariableFont_wght;
     border: 5px solid rgb(109, 157, 160);
     border-radius: 10px;
     background: rgb(194, 191, 238);
@@ -29,34 +35,39 @@ section {
     font-size: large;
     font-weight: 800;
     margin: auto;
-    padding: 10px ;
+    padding: 10px;
     text-align: center;
-    width: 25%;
+    width: 25rem;
+
 }
 
+/* Styling for background element */
 .bg {
     margin: auto;
     text-align: center;
-    width: 25%;
+    width: 25rem;
 }
 
+/* Styling for element with ID 'clock' */
 #clock {
     font-family: Orbitron-VariableFont_wght;
     font-weight: 800;
     background: linear-gradient(135deg, rgba(0, 255, 255, 1) 0%, rgba(255, 255, 0, 1) 52%, rgba(255, 0, 255, 1) 100%);
     margin: auto;
     padding: 5px;
-    font-size: XX-large;
+    font-size: xx-large;
     line-height: 50px;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+/* Styling for clip-text class */
 .clip-text {
     position: relative;
 }
 
+/* Styling for pseudo-elements before and after of clip-text */
 .clip-text:before,
 .clip-text:after {
     position: absolute;
@@ -64,15 +75,17 @@ section {
     border-radius: 10px;
 }
 
+/* Styling for pseudo-element before of clip-text */
 .clip-text:before {
     z-index: -2;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image:inherit;
+    background-image: inherit;
 }
 
+/* Styling for pseudo-element after of clip-text */
 .clip-text:after {
     z-index: -1;
     top: .125em;
