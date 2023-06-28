@@ -1,39 +1,22 @@
-let date = new Date();
-let fullDate = date.toLocaleString('en-US', {
-    weekday: 'long', // long, short, narrow
-    day: 'numeric', // numeric, 2-digit
-    year: 'numeric', // numeric, 2-digit
-    month: 'long', // numeric, 2-digit, long, short, narrow
+const date = new Date();
+const fullDate = date.toLocaleString('en-US', {
+    weekday: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    month: 'long',
 });
 
 document.getElementById("date").innerHTML = fullDate
 
-setInterval(showTime, 1000);
 function showTime() {
-    let time = new Date();
-    let hour = time.getHours();
-    let min = time.getMinutes();
-    let sec = time.getSeconds();
-    am_pm = " AM";
+    const time = new Date();
+    const hour = (time.getHours() % 12) || 12;
+    const minute = time.getMinutes().toString().padStart(2, "0")
+    const second = time.getSeconds().toString().padStart(2, "0")
+    const currentTime = hour + ":" + minute + ":" + second + (hour < 12 ? " AM" : " PM");
 
-    if (hour > 12) {
-        hour -= 12;
-        am_pm = " PM";
-    }
-    if (hour == 0) {
-        hr = 12;
-        am_pm = " AM";
-    }
-
-    hour = hour < 10 ? "0" + hour : hour;
-    min = min < 10 ? "0" + min : min;
-    sec = sec < 10 ? "0" + sec : sec;
-
-    let currentTime = hour + ":"
-        + min + ":" + sec + am_pm;
-
-    document.getElementById("clock")
-        .innerHTML = currentTime;
+    document.getElementById("clock").innerHTML = currentTime;
 }
 
-showTime();
+setInterval(showTime, 1000);
+
