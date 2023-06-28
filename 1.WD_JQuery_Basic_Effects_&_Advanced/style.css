@@ -48,6 +48,7 @@ section {
     font-size: large;
     line-height: 30px;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 50%;
 }
