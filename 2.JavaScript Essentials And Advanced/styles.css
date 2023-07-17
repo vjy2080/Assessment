@@ -1,5 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color: #000;
+  color: white;
+}
+h1{
+  text-align: center;
+}
+
 .slider {
-  margin: 0 auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,16 +53,15 @@
 .thumbnails {
   width: 80vw;
   text-align: center;
+  height: 60px;
+  overflow: hidden;
 }
 
-.leftBtn {
-  height: 20px;
-  width: 20px;
+.btn {
   text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
 }
 
-.rightBtn {
-  height: 20px;
-  width: 20px;
-  text-align: center;
-}
