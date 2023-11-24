@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape {
+  background-color: skyblue;
+  border-radius: 58% 42% 71% 29% / 37% 35% 65% 63%;
+  width: 50%;
+}
+
+.toggleButton{
+  border:none;
+  background-color: none;
+  float: right;
+}
