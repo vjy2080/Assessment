@@ -6,8 +6,9 @@ const Content = () => {
     const { theme } = useAppContext();
 
     return (
+        <>
         <div className='d-flex justify-content-center'>
-            <form style={{ backgroundColor: theme === 'dark' ? '#333' : '#fff', color: theme === 'dark' ? '#fff' : '#333' }} className=' border rounded-5  text-center p-4' action="" method="post">
+            <form style={{ backgroundColor: theme === 'dark' ? '#333' : '#fff', color: theme === 'dark' ? '#fff' : '#333' }} className=' border rounded-5  text-center p-4'>
                 <h3>Log in</h3>
                 <label htmlFor="email">Email
                 </label> <br />
@@ -33,6 +34,7 @@ const Content = () => {
                 </div>
             </form>
         </div>
+        </>
     );
 };
 

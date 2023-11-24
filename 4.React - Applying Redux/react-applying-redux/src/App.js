@@ -6,11 +6,11 @@ import Content from './Content';
 function App() {
   return (
     <AppProvider>
+      <h4 className='text-center'>Context API in React Components</h4>
       <div className="App">
         <div className="shape">
-
-        <ThemeToggle />
-        <Content />
+          <ThemeToggle />
+          <Content />
         </div>
       </div>
     </AppProvider>
