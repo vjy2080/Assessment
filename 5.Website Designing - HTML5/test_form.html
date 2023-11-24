@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        h4 {
+            text-align: center;
+            color: brown;
+            text-decoration: underline;
+        }
+
+        form {
+            background-color: skyblue;
+            margin: 20px;
+            border-radius: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- form tag starts here -->
+    <!-- h4 tag starts here -->
+    <h4>Student Registration Form </h4>
+    <!-- h4 tag ends here -->
+    <form>
+
+        First Name <!-- input tag starts here -->
+        <input type="text" placeholder="Enter your First Name"> <br><br>
+        Last Name <!-- input tag starts here -->
+        <input type="text" placeholder="Enter your Last Name"> <br><br>
+        Email <!-- input tag starts here -->
+        <input type="password" placeholder="Enter your password"> <br><br>
+        Mobile <!-- input tag starts here -->
+        <input type="tel" placeholder="Enter phone no."><br><br>
+        Gender<!-- input tag starts here -->
+        <input type="radio" name="gender" value="Male">Male
+        <!-- input tag starts here -->
+        <input type="radio" name="gender" value="Female">Female
+
+        <br><br>
+        <label for="birthDate">Date of Birth</label>
+        <input type="date" name="birthDate" id="birthDate" value="1990-01-01" min="1990-01-01" max="2005-12-31">
+        <br><br>
+        <label for="address">Address</label>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        <br><br>
+        City <!-- input tag starts here -->
+        <input type="text"> <br><br>
+
+        <br><br>
+        <br><br>
+        Area PIN <!-- input tag starts here -->
+        <input type="number"> <br><br>
+
+        <br><br>
+        <br><br>
+        State <!-- input tag starts here -->
+        <input type="text"> <br><br>
+        <label for="qualificatios">Qualificatios</label>
+        <select name="drop-down">
+            <!-- option tag starts here -->
+            <option value="Select Qualificatios">Select Qualificatios</option>
+            <!-- option tag ends here -->
+            <!-- option tag starts here -->
+            <option value="10th">10th</option>
+            <!-- option tag ends here -->
+            <!-- option tag starts here -->
+            <option value="12th">12th</option>
+            <!-- option tag ends here -->
+            <!-- option tag starts here -->
+            <option value="bachelor">Bachelor</option>
+            <!-- option tag ends here -->
+            <!-- option tag starts here -->
+            <option value="master">Master</option>
+            <!-- option tag ends here -->
+        </select>
+
+        <br><br>
+        <label for=specialization">Specialization</label>
+        <br>
+        Computer Science<!-- input tag starts here -->
+        <input type="checkbox"> <br>
+        Information Technology<!-- input tag starts here -->
+        <input type="checkbox"> <br>
+        Computer Architecture<!-- input tag starts here -->
+        <input type="checkbox"> <br>
+        Tele Communication<!-- input tag starts here -->
+        <input type="checkbox">
+        <br><br>
+        Password <!-- input tag starts here -->
+        <input type="password" name="password" id="password"> <br><br>
+        <!-- input tag starts here -->
+        <input class="register" type="submit" value="Register">
+    </form>
+    <!-- form tag ends here -->
+</body>
+
+</html>
