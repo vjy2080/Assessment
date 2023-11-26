@@ -1,6 +1,6 @@
-// script.js
+// ========== Validate email format ==========
+
 function validateEmail() {
-    // Validate email format
     const email = document.getElementById('email').value;
     const msgEmail = document.getElementById('msgEmail');
     const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -12,9 +12,9 @@ function validateEmail() {
         msgEmail.innerHTML = "";
     }
 }
+// ========== Validate mobile number ==========
 
 function validateMobile() {
-    // Validate mobile number
     const mobile = document.getElementById('mobile').value;
     const msgMobile = document.getElementById("msgMobile");
 
@@ -32,9 +32,9 @@ function validateMobile() {
     return true;
 }
 
+// ========== Form submission function ==========
 
 function submit(event) {
-    // Form submission function
     event.preventDefault();
     console.log("called-submit");
 
