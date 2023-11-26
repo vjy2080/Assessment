@@ -1,0 +1,48 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: brown;
+    text-decoration: underline;
+}
+
+form {
+    background-color: skyblue;
+    margin: 20px;
+    border-radius: 1%;
+}
+
+.col1 {
+    display: inline-block;
+    width: 10rem;
+}
+
+.col2 {
+    display: inline-block;
+}
+
+.register {
+    border: none;
+    background-color: green;
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.error {
+    color: red;
+}

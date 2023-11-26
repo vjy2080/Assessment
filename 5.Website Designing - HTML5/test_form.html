@@ -1,3 +1,4 @@
+<!-- form.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,107 +6,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        form {
-            padding: 20px;
-        }
-
-        h4 {
-            text-align: center;
-            color: brown;
-            text-decoration: underline;
-        }
-
-        form {
-            background-color: skyblue;
-            margin: 20px;
-            border-radius: 1%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- form tag starts here -->
-    <!-- h4 tag starts here -->
-    <h4>Student Registration Form </h4>
-    <!-- h4 tag ends here -->
+    <!-- Student Registration Form -->
+    <h2>Student Registration Form</h2>
     <form>
+        <div class="main">
+            <div class="col1">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="col2">
+                <input type="text" placeholder="Enter your First Name" name="fname" id="fname">
+            </div>
 
-        First Name <!-- input tag starts here -->
-        <input type="text" placeholder="Enter your First Name"> <br><br>
-        Last Name <!-- input tag starts here -->
-        <input type="text" placeholder="Enter your Last Name"> <br><br>
-        Email <!-- input tag starts here -->
-        <input type="password" placeholder="Enter your password"> <br><br>
-        Mobile <!-- input tag starts here -->
-        <input type="tel" placeholder="Enter phone no."><br><br>
-        Gender<!-- input tag starts here -->
-        <input type="radio" name="gender" value="Male">Male
-        <!-- input tag starts here -->
-        <input type="radio" name="gender" value="Female">Female
+            <br><br>
+            <div class="col1">
+                <label for="lname">Last Name</label>
+            </div>
+            <div class="col2">
+                <input type="text" placeholder="Enter your Last Name" name="lname" id="lname">
+            </div>
 
-        <br><br>
-        <label for="birthDate">Date of Birth</label>
-        <input type="date" name="birthDate" id="birthDate" value="1990-01-01" min="1990-01-01" max="2005-12-31">
-        <br><br>
-        <label for="address">Address</label>
-        <textarea name="address" id="address" cols="30" rows="10"></textarea>
-        <br><br>
-        City <!-- input tag starts here -->
-        <input type="text"> <br><br>
+            <br><br>
+            <div class="col1">
+                <label for="email">Email</label>
+            </div>
+            <div class="col2">
+                <input type="email" placeholder="Enter your Email" name="email" id="email" onblur="validateEmail()">
+            </div>
+            <div id="msgEmail" class="col2 error"></div>
 
-        <br><br>
-        <br><br>
-        Area PIN <!-- input tag starts here -->
-        <input type="number"> <br><br>
+            <br><br>
+            <div class="col1">
+                <label for="mobile">Mobile</label>
+            </div>
+            <div class="col2">
+                <input type="tel" placeholder="Enter Mobile No." name="mobile" id="mobile" onblur="validateMobile()">
+            </div>
+            <div id="msgMobile" class="col2 error"></div>
 
-        <br><br>
-        <br><br>
-        State <!-- input tag starts here -->
-        <input type="text"> <br><br>
-        <label for="qualificatios">Qualificatios</label>
-        <select name="drop-down">
-            <!-- option tag starts here -->
-            <option value="Select Qualificatios">Select Qualificatios</option>
-            <!-- option tag ends here -->
-            <!-- option tag starts here -->
-            <option value="10th">10th</option>
-            <!-- option tag ends here -->
-            <!-- option tag starts here -->
-            <option value="12th">12th</option>
-            <!-- option tag ends here -->
-            <!-- option tag starts here -->
-            <option value="bachelor">Bachelor</option>
-            <!-- option tag ends here -->
-            <!-- option tag starts here -->
-            <option value="master">Master</option>
-            <!-- option tag ends here -->
-        </select>
+            <br><br>
+            <div class="col1">
+                Gender
+            </div>
+            <div class="col2">
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+            </div>
 
-        <br><br>
-        <label for=specialization">Specialization</label>
-        <br>
-        Computer Science<!-- input tag starts here -->
-        <input type="checkbox"> <br>
-        Information Technology<!-- input tag starts here -->
-        <input type="checkbox"> <br>
-        Computer Architecture<!-- input tag starts here -->
-        <input type="checkbox"> <br>
-        Tele Communication<!-- input tag starts here -->
-        <input type="checkbox">
-        <br><br>
-        Password <!-- input tag starts here -->
-        <input type="password" name="password" id="password"> <br><br>
-        <!-- input tag starts here -->
-        <input class="register" type="submit" value="Register">
+            <br><br>
+            <div class="col1">
+                <label for="birthDate">Date of Birth</label>
+            </div>
+            <div class="col2">
+                <input type="date" name="birthDate" id="birthDate" value="1990-01-01" min="1990-01-01" max="2005-12-31">
+            </div>
+
+            <br><br>
+            <div class="row">
+                <div class="col1">
+                    <label for="address">Address</label>
+                </div>
+                <div class="col2">
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="col1">
+                City
+            </div>
+            <div class="col2">
+                <input type="text" name="city" id="city">
+            </div>
+
+            <br><br>
+            <div class="col1">
+                Area PIN
+            </div>
+            <div class="col2">
+                <input type="number" name="pin" id="pin">
+            </div>
+
+            <br><br>
+            <div class="col1">
+                State
+            </div>
+            <div class="col2">
+                <input type="text" name="state" id="state">
+            </div>
+
+            <br><br>
+            <div class="col1">
+                <label for="qualifications">Qualifications</label>
+            </div>
+            <div class="col2">
+                <select name="qualifications" id="qualifications">
+                    <option value="Select Qualifications">Select Qualifications</option>
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="bachelor">Bachelor</option>
+                    <option value="master">Master</option>
+                </select>
+            </div>
+
+            <br><br>
+            <div class="row">
+                <div class="col1">
+                    <label for="specialization">Specialization</label>
+                </div>
+                <div class="col2">
+                    <label for="computerScience">
+                        <input type="checkbox" id="computerScience" name="field" value="computerScience"> Computer
+                        Science
+                    </label> <br>
+
+                    <label for="informationTechnology">
+                        <input type="checkbox" id="informationTechnology" name="field" value="informationTechnology">
+                        Information Technology
+                    </label> <br>
+
+                    <label for="computerArchitecture">
+                        <input type="checkbox" id="computerArchitecture" name="field" value="computerArchitecture">
+                        Computer Architecture
+                    </label> <br>
+
+                    <label for="teleCommunication">
+                        <input type="checkbox" id="teleCommunication" name="field" value="teleCommunication">
+                        Telecommunication
+                    </label> <br>
+
+                </div>
+            </div>
+
+            <br><br>
+            <div class="col1">
+                <label for="password">Password</label>
+            </div>
+            <div class="col2">
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <input class="register" type="submit" value="Register" id="register">
+            </div>
+            <div id="msgSubmit" class="col2 error"></div>
+        </div>
     </form>
-    <!-- form tag ends here -->
+    <script src="script.js"></script>
 </body>
 
 </html>
